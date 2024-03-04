@@ -35,7 +35,7 @@ const BuyBtc = (props:BuyorSell) => {
             </div>
           </label>
           <div className="flex gap-5 self-end">
-            <div className="bg-white p-2 rounded-md" onClick={(e)=> setAmount(`${+amount-1}`)}>
+            <div className="bg-white p-2 rounded-md" onClick={(e)=> setAmount(`${ +amount == 0? "0":+amount-1}`)}>
               <FaMinus className="text-green-900" />
             </div>
             <div className="bg-white p-2 rounded-md" onClick={(e)=> setAmount(`${+amount+1}`)}>
@@ -58,7 +58,7 @@ const BuyBtc = (props:BuyorSell) => {
             </div>
           </label>
           <div className="flex gap-5 self-end">
-            <div className="bg-white p-2 rounded-md" onClick={(e)=> setPrice(`${+price-1}`)}>
+            <div className="bg-white p-2 rounded-md" onClick={(e)=> setPrice(`${ +price == 0? "0":+price-1}`)}>
               <FaMinus className="text-black" />
             </div>
             <div className="bg-white p-2 rounded-md" onClick={(e)=> setPrice(`${+price+1}`)}>
