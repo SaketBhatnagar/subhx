@@ -61,7 +61,7 @@ const BuyBtc = (props:BuyorSell) => {
             <div className="bg-white p-2 rounded-md" onClick={(e)=> setPrice(`${+price-1}`)}>
               <FaMinus className="text-black" />
             </div>
-            <div className="bg-white p-2 rounded-md" onClick={(e)=> setPrice(`${+price-1}`)}>
+            <div className="bg-white p-2 rounded-md" onClick={(e)=> setPrice(`${+price+1}`)}>
               <FaPlus className="text-black" />
             </div>
           </div>
