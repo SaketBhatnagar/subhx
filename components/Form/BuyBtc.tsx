@@ -46,7 +46,7 @@ const BuyBtc = (props:BuyorSell) => {
         {/*  price*/}
         <div className="flex gap-5 items-center">
           <label htmlFor="" className="">
-            <span>Price</span>
+            <span>PRICE</span>
             <div className="flex gap-2 items-center p-1 rounded-sm px-2 bg-white">
               <input
                 type="text"
@@ -67,9 +67,15 @@ const BuyBtc = (props:BuyorSell) => {
           </div>
         </div>
         {/* Total */}
+
+        <div className="">
+          <span>TOTAL</span>
         <div className="bg-white rounded-sm py-1 text-black  px-2 flex justify-between"> <span className="font-semibold">{+amount - +price}</span><span className="text-slate-400">INR</span></div>
+        </div>
         <div className="w-full relative">
+
         <button className={`${props.todo.includes("BUY")?"bg-emerald-600":"bg-red-500"} p-2 rounded-md w-full`}>{props.todo}</button>
+       
         <div className={`bg-black h-14 w-14 absolute top-[-1.8rem] right-[-3rem] rotate-[-130deg]`}></div>
         </div>
       </form>
